@@ -15,8 +15,10 @@ Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebElement("Car L
 Browser("Browser").Close
 
 systemUtil.Run ("C:\Program Files\Google\Chrome\Application\chrome.exe")
+Browser("Chrome").Navigate "https://advantageonlinebanking.com/#/" @@ hightlight id_;_525446_;_script infofile_;_ZIP::ssf23.xml_;_
 
-Browser("Browser").Navigate "https://advantageonlinebanking.com/#/" @@ hightlight id_;_525446_;_script infofile_;_ZIP::ssf23.xml_;_
+
+'Browser("Browser").Navigate "https://advantageonlinebanking.com/#/" @@ hightlight id_;_525446_;_script infofile_;_ZIP::ssf23.xml_;_
 
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Car Loan type_2").Click
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebElement("House Loan").Click
