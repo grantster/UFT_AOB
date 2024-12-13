@@ -1,4 +1,8 @@
-﻿Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Car Loan type_2").Click
+﻿Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\SnapshotReportMode"
+WshShell.RegWrite myKey, Parameter("save_image"),"REG_DWORD"
+Set WshShell = Nothing
+Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Car Loan type_2").Click
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebElement("House Loan").Click
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("House Loan type_3").Click
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebElement("Student Loan").Click
